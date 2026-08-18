@@ -4,7 +4,7 @@ void createArray(int arr[],int*size);
 void insertElement(int arr[],int*size,int element,int position);
 int searchElement(int arr[],int size,int element);
 void deleteElement(int arr[],int*size,int position);
-void display Array(int arr[],int size);
+void displayArray(int arr[],int size);
 int main(){
 int arr[MAX_SIZE];
 int size=0;
@@ -55,7 +55,7 @@ printf("Invalid choice!Please enter a valid option.\n");
 }
 return 0;
 }
-void createArray9int arr[],int*size){
+void createArray(int arr[],int*size){
 int n,i;
 printf("Enter the number of elements:");
 scanf("%d",&n);
@@ -63,7 +63,7 @@ if(n>MAX_SIZE){
 printf("Error: Number of elements exceeds the maximum array size.\n");
 return;
 }
-printf9"Enter %d elements:",n);
+printf("Enter %d elements:",n);
 for(i=0;i<n;i++){
 scanf("%d",&arr[i]);
 }
@@ -111,10 +111,8 @@ printf("Array is empty.\n");
 return;
 }
 printf("Array Elements:");
-for (int i=o;i<size;i++){
+for (int i=0;i<size;i++){
 printf("%d",arr[i]);
 }
 printf("\n");
 }
-
-
