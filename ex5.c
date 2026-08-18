@@ -7,7 +7,7 @@ struct BST* rchild;
 };
 typedef struct BST* NODE;
 NODE create() {
-NODE=temp;
+NODE temp;
 temp=(NODE) malloc(sizeof(struct BST));
 printf("\nEnter The Value:");
 scanf("%d",&temp->data);
@@ -22,7 +22,7 @@ void postorder(NODE root);
 void search(NODE root);
 void insert(NODE root,NODE newnode){
 if(newnode->data < root->data){
-if(root->child==NULL)
+if(root->lchild==NULL)
 root->lchild=newnode;
 else
 insert(root->lchild,newnode);
